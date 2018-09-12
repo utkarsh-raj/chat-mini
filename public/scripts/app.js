@@ -16,7 +16,6 @@ button.addEventListener("click", function() {
 socket.on("chat", function(data) {
     feedback.innerHTML = "";
     output.innerHTML += "<p><strong>" + data.handle + " :</strong> " + data.message + "</p>";
-    message.value = "";
     message.focus();
 });
 
@@ -31,4 +30,8 @@ message.addEventListener("keypress", function(event) {
 
 socket.on("typing", function(data) {
     feedback.innerHTML = "<p><em>" + data.handle + " is typing a message...</em></p>";
+});
+
+button.addEventListener("click", function() {
+    message.value = "";
 });
