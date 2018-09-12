@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Talk App</title>
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+    </head>
+    <body>
+        
+    
+        <div id="chat-main" class="container">
+            <h3>Welcome to the Talk App!</h3>
+            <h4>Say hi!</h4>
+            <div class="container">
+                <div id="output"><strong>Utkarsh : </strong>Hello There!</div>
+                <br>
+                <div id="feedback"></div>
+            </div>
+            <div class="container">
+                <input id="handle" type="text" name="handle" placeholder="Handle" required>
+                <input id="message" type="text" name="message" placeholder="Message">
+                <button id="button">Send</button>
+            </div>
+        </div>
+        <div id="user" class="container"><strong>You</strong> and <%= user %> others are online<br>
+        This is the testing phase of the App.<br>
+        Some features may not work and you can report bugs if you encounter them.<br>
+        Please be gentle and polite to all!
+        </div>
+        
+        
+        
+        
+        
+        
+        <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+        <script src="scripts/app.js"></script>
+        
+    </body>
+</html>
